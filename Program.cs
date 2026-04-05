@@ -4,9 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        SayaMusicTrack track = new SayaMusicTrack("Lagu Favorit");
+        SayaMusicTrack track = new SayaMusicTrack("Lagu Uji");
 
-        track.IncreasePlayCount(10);
+        for (int i = 0; i < 1000; i++)
+        {
+            track.IncreasePlayCount(1000000);
+        }
+
         track.PrintTrackDetails();
     }
 }
